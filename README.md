@@ -15,11 +15,8 @@ c) The median average order value is $284, and the mean with outliers removed is
 
 a) 
 SELECT Orders.ShipperID, COUNT(Orders.ShipperID), Shippers.ShipperName
-
 FROM Orders
-
 LEFT JOIN Shippers WHERE Orders.ShipperID = Shippers.ShipperID
-
 GROUP BY Orders.ShipperID;
 
 Speedy Express shipped 54 orders in total.
